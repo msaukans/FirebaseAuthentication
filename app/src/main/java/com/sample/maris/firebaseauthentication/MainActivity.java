@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(fire.getCurrentUser() !=null){
             finish();
-            startActivity(new Intent(MainActivity.this,ProfileActivity.class));
+           // startActivity(new Intent(MainActivity.this,ProfileActivity.class));
         }
 
         registerBtn = (Button) findViewById(R.id.registerBtn);

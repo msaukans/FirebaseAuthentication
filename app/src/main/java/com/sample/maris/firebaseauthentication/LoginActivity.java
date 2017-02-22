@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
         if(v == tv1){
-            finish();//t
+
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
         }
     }
@@ -78,8 +78,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             return;
         }
 
-        //bar.setMessage("logging in....");
-        //bar.show();
+        bar.setMessage("logging in....");
+        bar.show();
 
         fire.signInWithEmailAndPassword(em,p)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
