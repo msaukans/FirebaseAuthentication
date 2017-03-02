@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(fire.getCurrentUser() !=null){
             finish();
-           // startActivity(new Intent(MainActivity.this,ProfileActivity.class));
+            startActivity(new Intent(MainActivity.this,ProfileActivity.class));
         }
 
         registerBtn = (Button) findViewById(R.id.registerBtn);
@@ -95,25 +95,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(MainActivity.this,LoginActivity.class));
         }
     }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
+//
+//    @Override
+//    protected void onRestart() {
+//        super.onRestart();
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//    }
+//
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//    }
 }
 

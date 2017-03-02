@@ -19,7 +19,7 @@
         android:layout_alignParentStart="true">
 
         <TextView
-            android:text="Register"
+            android:text="@string/Register"
             android:textSize="30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -29,7 +29,7 @@
          android:inputType="textEmailAddress"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:hint="Email"
+         android:hint="@string/email"
          android:layout_margin="15dp"/>
 
         <EditText
@@ -37,19 +37,19 @@
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:layout_margin="15dp"/>
 
         <Button
             android:id="@+id/registerBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="@string/Register"
             android:layout_margin="15dp"/>
 
         <TextView
             android:id="@+id/tv1"
-            android:text="Already registered? Sign in here"
+            android:text="@string/already_registered_sign_in_here"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
