@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="user email"
+        android:text="@string/user_email"
         android:textSize="30sp"
         />
 
@@ -23,9 +23,19 @@
         android:id="@+id/logoutBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="logout"
+        android:text="@string/logout"
         android:layout_below="@id/userEmailTv"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_highscore"
+        android:layout_below="@id/logoutBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
 
 
 </RelativeLayout>

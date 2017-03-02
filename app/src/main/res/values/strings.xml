@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Firebase Authentication</string>
+    <string name="title_activity_display">display</string>
+    <string name="highscore">Highscore</string>
+    <string name="check_highscore">Check highscore</string>
+    <string name="logout">logout</string>
+    <string name="user_email">user email</string>
+    <string name="welcome">"Welcome "</string>
+    <string name="dont_have_an_account">Dont have an account?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
 </resources>

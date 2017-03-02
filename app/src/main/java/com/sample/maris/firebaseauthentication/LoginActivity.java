@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         fire.signInWithEmailAndPassword(em,p)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
+
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             //start profile activity
@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                         }
                         else{
-                            Toast.makeText(LoginActivity.this,"Please enter email",Toast.LENGTH_SHORT);
+                            Toast.makeText(LoginActivity.this,"Please enter email",Toast.LENGTH_SHORT).show();
 
                             startActivity(new Intent(LoginActivity.this,ProfileActivity.class));
 

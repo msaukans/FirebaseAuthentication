@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseAuth fire;
-    private Button logoutBtn;
+    private Button logoutBtn, scoreBtn;
     private TextView userEmailTv;
 
     @Override
@@ -32,12 +32,12 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         String user1;
         user1 = user.getEmail();
         userEmailTv = (TextView) findViewById(R.id.userEmailTv);
-        userEmailTv.setText("Welcome " + user1);
+        userEmailTv.setText(getString(R.string.welcome) + user1);
         logoutBtn = (Button) findViewById(R.id.logoutBtn);
         logoutBtn.setOnClickListener(this);
 
-
-
+        scoreBtn = (Button) findViewById(R.id.btnList);
+        scoreBtn.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +47,11 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             //finish();//t
             //startActivity(new Intent(ProfileActivity.this,LoginActivity.class));
             Toast.makeText(this, "Signing out, -unfinished", Toast.LENGTH_SHORT).show();
+        }
+
+        if(scoreBtn == v){
+            finish();
+            startActivity(new Intent(ProfileActivity.this, display.class));
         }
     }
 }

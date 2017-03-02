@@ -69,15 +69,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bar.show();
 
 
-        fire.createUserWithEmailAndPassword(email,pass)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        fire.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this, "Registered user", Toast.LENGTH_SHORT);
+                            Toast.makeText(MainActivity.this, "Registered user", Toast.LENGTH_SHORT).show();
                         }
                         else{
-                            Toast.makeText(MainActivity.this, "Fail register",Toast.LENGTH_SHORT);
+                            Toast.makeText(MainActivity.this, "Fail register",Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
@@ -95,6 +94,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(view == tv1){
             startActivity(new Intent(MainActivity.this,LoginActivity.class));
         }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
     }
 }
 
